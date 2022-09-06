@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from '../Layout';
 import { Main } from '../Main';
-import PageNotFound from '../Other/PageNotFound';
+import PageNotFound from '../PageNotFound';
 import styles from './App.module.scss';
 
 function App() {

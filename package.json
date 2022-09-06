@@ -52,6 +52,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "lint-staged": "^12.3.7",
+    "node-sass": "^7.0.1",
     "prettier": "2.6.1",
     "sass": "^1.54.8"
   }

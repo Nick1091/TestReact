@@ -15,24 +15,24 @@ export function Header() {
         <nav className={styles.header__navigate}>
           <ul className={styles.header__icons}>
             <li>
-              <button className={styles.header__icon} onClick={(e) => e.preventDefault}>
+              <a href="!#" className={styles.header__icon} onClick={(e) => e.preventDefault}>
                 <img src={HomeIcon} alt="Home" />
-              </button>
+              </a>
             </li>
             <li className={styles.chat_active}>
-              <button className={styles.header__icon} onClick={(e) => e.preventDefault}>
+              <a href="!#" className={styles.header__icon} onClick={(e) => e.preventDefault}>
                 <img src={ChatIcon} alt="Chat" />
-              </button>
+              </a>
             </li>
             <li>
-              <button className={styles.header__icon} onClick={(e) => e.preventDefault}>
+              <a href="!#" className={styles.header__icon} onClick={(e) => e.preventDefault}>
                 <img src={SettingsIcon} alt="Settings" />
-              </button>
+              </a>
             </li>
             <li>
-              <button className={styles.header__icon} onClick={(e) => e.preventDefault}>
+              <a href="!#" className={styles.header__icon} onClick={(e) => e.preventDefault}>
                 <img src={UserPic} alt="Account" />
-              </button>
+              </a>
             </li>
             <li>
               <select>

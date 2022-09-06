@@ -1,6 +1,8 @@
+@import '../../common/variables.scss';
+
 .footer{
-  background: #000;
-  color: #ffffff;
+  background: $footer-bg;
+  color: $footer-text-color;
   width: 100%;
   .footer__container{
     max-width: 1410px;
@@ -11,47 +13,36 @@
     grid-auto-flow: column;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr minmax(300px, 420px); 
+    @include breakpoint(xxl) {
+      max-width: calc(100% - 120px);
+    }
     a {
-      padding: 0px;
-      color:#ffffff;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 27px;
-      text-decoration: none;
+      color: $footer-text-color;
       transition: all 0.1s;
+      @include font-regular;
       &:hover{
-        color:#dedede
+        color: $footer-hover
       }
     }
     p{
-      font-size: 14px;
-      line-height: 21px;
-      font-weight: 400;
+      @include font-regular-sm;
       align-self: end;
       grid-row-start: 4;
       grid-row-end: 5;
-      margin: 0px;
     }
     .header__logo{
       grid-row-start: 1;
       grid-row-end: 3;
     }
     .header__info{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include flex-content;
       nav{
         ul{
           display: flex;
-          margin: 0px;
-          padding: 0px;
           gap: 1rem;
           list-style: none;
           a{
             line-height: 1rem;
-            text-decoration: none;
-            margin: 0;
-            padding: 0;
           }
         }
       }

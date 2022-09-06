@@ -1,8 +1,8 @@
-import styles from './Footer.module.scss';
 import Logo from '../../assets/icons/Logo Imagine_white.svg';
 import InstIcon from '../../assets/icons/Instagram.svg';
 import FacebookIcon from '../../assets/icons/Facebook.svg';
 import WhatsAppIcon from '../../assets/icons/WhatsApp.svg';
+import styles from './Footer.module.scss';
 
 export function Footer() {
   return (

@@ -1,7 +1,6 @@
-import React from 'react';
 import { IArtsData } from '../../interfaces';
-import styles from './Picture.module.scss';
 import DeleteIcon from '../../assets/icons/Delete.svg';
+import styles from './Picture.module.scss';
 
 const Picture: React.FC<IArtsData> = ({ pictures }) => {
   return (

@@ -1,7 +1,6 @@
 #container {
   margin: 1rem;
 }
-
 .items {
   margin-bottom: 1rem;
 }
@@ -9,7 +8,7 @@
   max-width: 1410px;
   margin: 0 auto 50px;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   .pagination__wrapper{
     width: 600px;
     .pagination{
@@ -27,21 +26,21 @@
           width: 59px;
           height: 60px;
           padding: 5px 5px;
-          border-top: solid 1px rgba(0, 0, 0, 0.235);
-          border-bottom: solid 1px rgba(0, 0, 0, 0.235);
-          border-right: solid 1px rgba(0, 0, 0, 0.235);
+          border-top: solid 1px rgba(0, 0, 0, 0.250);
+          border-bottom: solid 1px rgba(0, 0, 0, 0.250);
+          border-right: solid 1px rgba(0, 0, 0, 0.250);
           transition: all 0.1s;
           &:hover{
             cursor: pointer;
-            background-color: rgba(0, 0, 0, 0.235);
+            background-color: rgba(0, 0, 0, 0.250);
           }
         }
       }
       .disabled{
-        color: rgba(0, 0, 0, 0.235);
+        color: rgba(0, 0, 0, 0.250);
       }
       .page_prev_item{
-        border-left: solid 1px rgba(0, 0, 0, 0.235);
+        border-left: solid 1px rgba(0, 0, 0, 0.250);
       }
       .active{
         color: #fff;

@@ -1,0 +1,67 @@
+$bg-header-shadow: #b8b8b816;
+$unread-message-color: #4453A6;
+$unread-msg-border: #ffffff;
+
+$footer-bg: #000;
+$footer-text-color: #ffffff;
+$footer-hover: #dedede;
+
+$bg-text-field: #ffffff;
+$shadow-test-field: #f2f2f2;
+$bg-input: #F6F6F6;
+
+@mixin font-regular {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+@mixin font-main-form {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+}
+@mixin font-regular-sx {
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+}
+@mixin font-regular-sm {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+@mixin font-select {
+  line-height: 150%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+@mixin font-main-title {
+  font-size: 50px;
+  letter-spacing: -1px;
+  line-height: 60px;
+  font-weight: 400px;
+}
+@mixin flex-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin breakpoint($point) {
+  @if $point == xxl {
+    @media (max-width: 1530px) { @content; }
+  }
+  @else if $point == lg {
+    @media (max-width: 1024px) { @content; }
+  }
+  @else if $point == md {
+    @media (max-width: 768px) { @content;}
+  }
+  @if $point == sm {
+    @media (max-width: 576px) { @content; }
+  }
+}

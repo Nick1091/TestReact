@@ -1,0 +1,38 @@
+@import '../../common/variables.scss';
+
+.radio__multiselect {
+  min-width: 175px;
+  .selectBox {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0px;
+    font:inherit;
+    cursor: pointer;
+    @include flex-content;
+    .img_rotate{
+      transform: rotate(180deg);
+    }
+  }
+  .radio__overSelect{
+    position: relative;
+    width: 100%;
+    .radios__visible{
+      right: 0;
+      position: absolute;
+      z-index: 2;
+      padding: 20px;
+      background-color: $bg-text-field;
+      box-shadow:  0px 0px 3px 2px $shadow-test-field;
+      .radios__overlay{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+      }
+    }
+    .radios__hide{
+      display: none;
+    }
+  }
+}
