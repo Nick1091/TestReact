@@ -1,0 +1,76 @@
+$bg-header-color: #b8b8b816;
+$unread-message-color: #4453A6;
+
+@mixin font-select {
+  line-height: 150%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+.header {
+  width: 100%;
+  box-shadow: 0 2px 10px 10px $bg-header-color;
+  .header__container{
+    max-width: 1410px;
+    height: 112px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header__logo{
+      flex: 9;
+      img {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .header__navigate{
+      flex: 3;
+      .header__icons{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+          list-style: none;
+          .header__icon {
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            position: relative;
+          }
+          select {
+            border: none;
+            cursor: pointer;
+            @include font-select;
+            option{
+              @include font-select;
+            }
+          }
+        }
+        li:nth-child(4) {
+          img {
+            border-radius: 50%; 
+            height: 38px;
+            width: 38px;
+          }
+        }
+        .chat_active {
+          .header__icon::after{
+            content: '';
+            position: absolute;
+            top: -3px;
+            right: -3px;
+            background-color: $unread-message-color;
+            border-radius: 50%;
+            border: solid #fff 2px;
+            height: 10px;
+            width: 10px;
+          }
+        }
+      }
+    }
+  }
+}

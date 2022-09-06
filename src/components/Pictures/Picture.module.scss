@@ -1,0 +1,41 @@
+.picture__container{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  .picture__description{
+    display: flex;
+    gap: 10px;
+    .picture__photo{
+      object-fit: contain;
+      width: 38px;
+    }
+    .picture__titles{
+      .picture__author{
+        margin: 0px;
+        padding: 0px;
+        font-size: 18px;
+        font-weight: 600px;
+        line-height: 27px;
+      }
+      .picture__title{
+        margin: 0px;
+        padding: 0px;
+        font-size: 16px;
+        font-weight: 400px;
+        line-height: 24px;
+      }
+    }
+  }
+  button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    margin:0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,181 @@
+.main {
+  flex: 1 1 auto;
+  width: 100%;
+  margin: 100px auto;
+  .main__container{
+    max-width: 1410px;
+    margin: 0 auto;
+    .main__header{
+      margin: 15px 0px 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 50px;
+      letter-spacing: -1px;
+      line-height: 60px;
+      font-weight: 400px;
+      .main__header_title{
+        font:inherit;
+      }
+      .main__header_count{
+        font:inherit
+      }
+    }
+    .main__option_container{
+      margin: 40px auto;
+      display: flex;
+    }
+    .main__pictures{
+      margin: 0 auto;
+      display: grid;
+      grid-auto-flow: row;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 30px;
+      height: 653px;
+    }
+  }
+}
+
+.form{
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 600;
+  margin-bottom: 40px;
+
+  .radio__multiselect {
+    min-width: 175px;
+    .selectBox {
+      width: 100%;
+      background: none;
+      border: none;
+      font:inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      cursor: pointer;
+      padding: 0px;
+      .img_rotate{
+        transform: rotate(180deg);
+      }
+      p {
+        padding: 0px;
+      }
+    }
+    .radio__overSelect{
+      position: relative;
+      width: 100%;
+      .radios__visible{
+        right: 0;
+        position: absolute;
+        z-index: 2;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow:  0px 0px 3px 2px #f2f2f2;
+        .radios__overlay{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          position: relative;
+          input{
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+            &:checked + label::after {
+                opacity: 1;
+            }
+          }
+          label {
+            display: block;
+            cursor: pointer;
+            display: flex;
+            align-items:center;
+            justify-content: start;
+            user-select: none;
+            &::before {
+              content: '';
+              display: inline-block;
+              width: 22px;
+              height: 22px;
+              flex-shrink: 0;
+              flex-grow: 0;
+              border: 1px solid hsl(210, 11%, 71%);
+              border-radius: 50%;
+              margin-right: 10px;
+              transition: 0.1s;
+            }
+            &::after {
+              content: '';
+              position: absolute;
+              left: 7px;
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background:  #000000;
+              opacity: 0;
+              transition: 0.1s;
+              margin-right: 10px;
+              z-index: 15;
+            }
+          }
+        }
+        label:hover {
+          border-radius: 5px;
+          &::before{
+            background-color:#8b8b8b41;
+          }
+        }
+      }
+      .radios__hide{
+        display: none;
+      }
+    }
+  }
+  .dropdown__textfield {
+    .selectBox{
+      width: 100%;
+      background: none;
+      border: none;
+      font:inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      cursor: pointer;
+      padding: 0px;
+      .img_rotate{
+        transform: rotate(180deg);
+      }
+      p {
+        padding: 0px;
+      }
+    }
+    .textfield{
+      position: relative;
+      width: 100%;
+      .textfield__visible{
+        z-index: 2;
+        left: 0;
+        position: absolute;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        box-shadow:  0px 0px 3px 2px #f2f2f2;
+        input{
+          display: flex;
+          overflow: hidden;
+          height: 50px;
+          border: none;
+          background-color: #F6F6F6;
+          font-size: 18px;
+          line-height: 27px;
+          padding: 0px 20px;
+        }
+      }
+      .textfield__hidden{
+        display: none;
+      }
+    }
+  }
+};

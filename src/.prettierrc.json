@@ -1,0 +1,17 @@
+{
+  "endOfLine": "auto",
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "printWidth": 100,
+  "arrowParens": "always",
+  "overrides": [
+    {
+      "files": "*.{js,jsx,tsx,ts,scss,json,html}",
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}
