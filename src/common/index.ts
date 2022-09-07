@@ -1,1 +1,0 @@
-export { ArtData } from './data';

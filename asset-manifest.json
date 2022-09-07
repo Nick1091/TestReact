@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/TestReact/static/css/main.16f1d56a.css",
+    "main.js": "/TestReact/static/js/main.d8ea80d0.js",
+    "static/media/Artwork 2.png": "/TestReact/static/media/Artwork 2.7ef17299ebc4fdee34ce.png",
+    "static/media/Artwork.png": "/TestReact/static/media/Artwork.e36fd2ce6341288e7cd2.png",
+    "static/media/Artwork 4.png": "/TestReact/static/media/Artwork 4.95f340cc378e904604f2.png",
+    "static/media/Artwork 3.png": "/TestReact/static/media/Artwork 3.a6027bf0c4567850b8fd.png",
+    "static/media/Logo Imagine_white.svg": "/TestReact/static/media/Logo Imagine_white.8d3e758a822a2fb6a06eec464eb82d5a.svg",
+    "static/media/Logo Imagine.svg": "/TestReact/static/media/Logo Imagine.265a97f56d08eccf941c458ad97f0c4a.svg",
+    "static/media/Settings Icon.svg": "/TestReact/static/media/Settings Icon.274d3ef859c57fb3893fc1321bce36d3.svg",
+    "static/media/Instagram.svg": "/TestReact/static/media/Instagram.3d821a68f073c7166fbc24b2636f670e.svg",
+    "static/media/Delete.svg": "/TestReact/static/media/Delete.165f56bdf394a719e8b5870502642419.svg",
+    "static/media/WhatsApp.svg": "/TestReact/static/media/WhatsApp.7310064777f700ea3f46bb1b5e94dbd4.svg",
+    "static/media/Chat Icon.svg": "/TestReact/static/media/Chat Icon.400d6412b3c34c9772682d1f15ad8181.svg",
+    "static/media/Home Icon.svg": "/TestReact/static/media/Home Icon.bd6f28dfe03d1b530723b1f57b699415.svg",
+    "index.html": "/TestReact/index.html",
+    "static/media/Facebook.svg": "/TestReact/static/media/Facebook.884f737d7d3c9eae016817b0e1e60ff3.svg",
+    "static/media/iconsMenu.svg": "/TestReact/static/media/iconsMenu.60159947bf4c31289013260e06d760e1.svg",
+    "static/media/Arrow_down.svg": "/TestReact/static/media/Arrow_down.a1f2f2159f732c281f9ed021bc818e46.svg",
+    "main.16f1d56a.css.map": "/TestReact/static/css/main.16f1d56a.css.map",
+    "main.d8ea80d0.js.map": "/TestReact/static/js/main.d8ea80d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16f1d56a.css",
+    "static/js/main.d8ea80d0.js"
+  ]
+}
