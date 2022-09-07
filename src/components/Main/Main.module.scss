@@ -4,11 +4,26 @@
   flex: 1 1 auto;
   width: 100%;
   margin: 100px auto;
+  @include breakpoint(xxl) {
+    margin: 50px auto;
+  }
+  @include breakpoint(xl) {
+    margin: 30px auto;
+  }
+  @include breakpoint(md) {
+    margin: 10px auto;
+  }
   .main__container{
     max-width: 1410px;
     margin: 0 auto;
     @include breakpoint(xxl) {
       max-width: calc(100% - 120px);
+    }
+    @include breakpoint(md) {
+      max-width: calc(100% - 60px);
+    }
+    @include breakpoint(sm) {
+      max-width: calc(100% - 30px);
     }
     .main__header{
       margin: 30px 0px 55px auto;
@@ -20,13 +35,35 @@
       .main__header_count{
         font:inherit
       }
+      @include breakpoint(xxl) {
+        margin: 15px 0px 25px auto;
+      }
+      @include breakpoint(md) {
+        margin: 5px 0px 5px auto;
+        @include font-main-title-md;
+      }
+      @include breakpoint(sm) {
+        margin: 0px;
+        @include font-main-title-sm;
+      }
     }
     .main__pictures{
       display: grid;
       grid-auto-flow: row;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 30px;
+      gap: 20px;
       height: 653px;
+      @include breakpoint(xxl) {
+        height: 40vw;
+      }
+      @include breakpoint(lg) {
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+      }
+      @include breakpoint(lg) {
+        grid-template-columns: 1fr;
+        height: 100%;
+      }
     }
   }
 }

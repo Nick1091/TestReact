@@ -36,6 +36,7 @@ export function FormContainer() {
         <div className={styles.textfield}>
           <div className={isOpenName ? styles.textfield__visible : styles.textfield__hidden}>
             <input
+              className={styles.text_input}
               type="text"
               ref={textInput}
               onClick={handleClick}

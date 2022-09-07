@@ -6,6 +6,20 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 30px;
   margin-bottom: 60px;
+  @include breakpoint(lg) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    @include font-regular-sx;
+  }
+  @include breakpoint(md) {
+    margin-bottom: 20px;
+  }
+  @include breakpoint(ыь) {
+    margin-bottom: 10px;
+  }
   @include font-main-form;
   .dropdown__textfield {
     .selectBox{
@@ -30,7 +44,14 @@
         padding: 20px;
         background-color: $bg-text-field;
         box-shadow:  0px 0px 3px 2px $shadow-test-field;
-        input{
+        @include breakpoint(lg) {
+          padding: 15px;
+        }
+        @include breakpoint(md) {
+          padding: 10px;
+        }
+        .text_input{
+          z-index: 2;
           display: flex;
           overflow: hidden;
           height: 50px;
@@ -38,6 +59,15 @@
           background-color: $bg-input;
           padding: 0px 20px;
           @include font-regular;
+          @include breakpoint(md) {
+            height: 35px;
+            @include font-regular-sx;
+            padding: 0px 10px;
+          }
+          @include breakpoint(sm) {
+            height: 30px;
+            @include font-regular-sm;
+          }
         }
       }
       .textfield__hidden{

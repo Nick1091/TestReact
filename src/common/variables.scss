@@ -23,7 +23,7 @@ $bg-input: #F6F6F6;
 }
 @mixin font-regular-sx {
   font-size: 16px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 24px;
 }
 @mixin font-regular-sm {
@@ -45,6 +45,18 @@ $bg-input: #F6F6F6;
   line-height: 60px;
   font-weight: 400px;
 }
+@mixin font-main-title-md {
+  font-size: 34px;
+  letter-spacing: -1px;
+  line-height: 30px;
+  font-weight: 400px;
+}
+@mixin font-main-title-sm {
+  font-size: 24px;
+  letter-spacing: -1px;
+  line-height: 27px;
+  font-weight: 400px;
+}
 @mixin flex-content {
   display: flex;
   align-items: center;
@@ -53,7 +65,10 @@ $bg-input: #F6F6F6;
 
 @mixin breakpoint($point) {
   @if $point == xxl {
-    @media (max-width: 1530px) { @content; }
+    @media (max-width: 1529px) { @content; }
+  }
+  @else if $point == xl {
+    @media (max-width: 1200px) { @content; }
   }
   @else if $point == lg {
     @media (max-width: 1024px) { @content; }

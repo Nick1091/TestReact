@@ -15,11 +15,27 @@
     grid-template-columns: 1fr minmax(300px, 420px); 
     @include breakpoint(xxl) {
       max-width: calc(100% - 120px);
+      margin: 30px auto;
+    }
+    @include breakpoint(md) {
+      max-width: calc(100% - 60px);
+      margin: 20px auto 0px;
+      grid-auto-flow: row;
+      grid-template-rows: none;
+      grid-template-columns: none; 
+      gap: 0.5rem;
+      padding-bottom: 10px;
+    }
+    @include breakpoint(sm) {
+      max-width: calc(100% - 30px);
     }
     a {
       color: $footer-text-color;
       transition: all 0.1s;
       @include font-regular;
+      @include breakpoint(md) {
+        @include font-regular-sx;
+      }
       &:hover{
         color: $footer-hover
       }
@@ -29,12 +45,24 @@
       align-self: end;
       grid-row-start: 4;
       grid-row-end: 5;
+      @include breakpoint(md) {
+        grid-row-start: 14;
+        grid-row-end: 15;
+      }
+      @include breakpoint(sm) {
+        font-size: 12px;
+      }
     }
-    .header__logo{
+    .footer__logo{
       grid-row-start: 1;
       grid-row-end: 3;
+      @include breakpoint(md) {
+        grid-row-start: 1;
+        grid-row-end: 8;
+        height: 20px;
+      }
     }
-    .header__info{
+    .footer__info{
       @include flex-content;
       nav{
         ul{
@@ -43,6 +71,10 @@
           list-style: none;
           a{
             line-height: 1rem;
+            @include breakpoint(md) {
+              font-size: 0.9rem;
+              line-height: 0.9rem;
+            }
           }
         }
       }

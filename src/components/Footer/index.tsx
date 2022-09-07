@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__container}>
-        <img src={Logo} className={styles.header__logo} alt="Logo" />
+        <img src={Logo} className={styles.footer__logo} alt="Logo" />
         <a href="!#" onClick={(e) => e.preventDefault()}>
           Contract offer
         </a>
@@ -18,7 +18,7 @@ export function Footer() {
         <a href="!#" onClick={(e) => e.preventDefault()}>
           imagine.com
         </a>
-        <div className={styles.header__info}>
+        <div className={styles.footer__info}>
           <a href="!#" onClick={(e) => e.preventDefault()}>
             info@imagine.com
           </a>

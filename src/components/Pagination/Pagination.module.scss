@@ -1,3 +1,5 @@
+@import '../../common/variables.scss';
+
 #container {
   margin: 1rem;
 }
@@ -9,8 +11,23 @@
   margin: 0 auto 50px;
   display: flex;
   justify-content: flex-end;
+  @include breakpoint(xxl) {
+    margin: 30px auto 30px;
+  }
+  @include breakpoint(lg) {
+    margin: 30px auto 30px;
+  }
+  @include breakpoint(md) {
+    justify-content: flex-start;
+  }
+  @include breakpoint(sm) {
+    margin: 20px auto 10px;
+  }
   .pagination__wrapper{
     width: 600px;
+    @include breakpoint(xxl) {
+      width: 500px;
+    }
     .pagination{
       display: flex;
       align-items: center;
@@ -30,6 +47,15 @@
           border-bottom: solid 1px rgba(0, 0, 0, 0.250);
           border-right: solid 1px rgba(0, 0, 0, 0.250);
           transition: all 0.1s;
+          @include breakpoint(xxl) {
+            width: 49px;
+            height: 50px;
+          }
+          @include breakpoint(sm) {
+            width: 32px;
+            height: 33px;
+            font-size: 14px;
+          }
           &:hover{
             cursor: pointer;
             background-color: rgba(0, 0, 0, 0.250);

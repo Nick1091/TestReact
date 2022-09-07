@@ -11,8 +11,22 @@
     @include breakpoint(xxl) {
       max-width: calc(100% - 120px);
     }
+    @include breakpoint(md) {
+      max-width: calc(100% - 60px);
+    }
+    @include breakpoint(xl) {
+      height: 86px;
+    }
+    @include breakpoint(sm) {
+      height: 50px;
+      max-width: calc(100% - 30px);
+    }
     .header__logo{
       flex: 9;
+      @include breakpoint(md) {
+        flex: 0 0 auto;
+        height: 20px;
+      }
       img {
         display: flex;
         align-items: center;
@@ -21,17 +35,33 @@
     .header__navigate{
       flex: 3 1 310px;
       max-width: 310px;
+      @include breakpoint(md) {
+        flex: 0 0 auto;
+      }
       .header__icons{
         width: 100%;
         @include flex-content;
+        @include breakpoint(md) {
+          display: flex;
+          gap: 15px;
+        }
         li {
           list-style: none;
+          @include breakpoint(sm) {
+            display: none;
+          }
           .header__icon {
             padding: 0;
             border: none;
             background-color: transparent;
             cursor: pointer;
             position: relative;
+            img{
+              @include breakpoint(md) {
+                width: 20px;
+                height: 20px;
+              }
+            }
           }
           select {
             border: none;
@@ -40,6 +70,15 @@
             option{
               @include font-select;
             }
+            @include breakpoint(md) {
+              @include font-regular-sx;
+            }
+          }
+        }
+        li:last-child{
+          display: none;
+          @include breakpoint(sm) {
+            display: block;
           }
         }
         li:nth-child(4) {
@@ -47,6 +86,10 @@
             border-radius: 50%; 
             height: 38px;
             width: 38px;
+            @include breakpoint(md) {
+              width: 25px;
+              height: 25px;
+            }
           }
         }
         .chat_active {
@@ -58,8 +101,12 @@
             background-color: $unread-message-color;
             border-radius: 50%;
             border: solid $unread-msg-border 2px;
-            height: 10px;
-            width: 10px;
+            height: 8px;
+            width: 8px;
+            @include breakpoint(md) {
+              top: -9px;
+              right: -4px;
+            }
           }
         }
       }

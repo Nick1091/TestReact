@@ -9,7 +9,7 @@ export const RadioInput: React.FC<InputDataType> = ({ idx, item, setCategory, Ca
   return (
     <>
       <input
-        className={styles.input}
+        className={styles.radio_input}
         type="radio"
         id={idx + 'id'}
         checked={Category === item}

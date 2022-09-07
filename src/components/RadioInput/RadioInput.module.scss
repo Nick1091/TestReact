@@ -1,4 +1,6 @@
-input{
+@import '../../common/variables.scss';
+
+.radio_input{
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -24,6 +26,10 @@ label {
     border-radius: 50%;
     margin-right: 10px;
     transition: 0.1s;
+    @include breakpoint(md) {
+      width: 16px;
+      height: 16px;
+    }
   }
   &::after {
     content: '';
@@ -37,6 +43,11 @@ label {
     transition: 0.1s;
     margin-right: 10px;
     z-index: 15;
+    @include breakpoint(md) {
+      left: 4px;
+      width: 10px;
+      height: 10px;
+    }
   }
 }
 label:hover {
